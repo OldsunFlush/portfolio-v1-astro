@@ -1,0 +1,25 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content={Astro.generator} />
+  <title>{title}</title>
+  <meta name="author" content="Pierre Prézelin" />
+  <meta
+    name="description"
+    content="Bonjour, je suis Pierre Prézelin, étudiant en multimédia basé à Angoulême. Ceci est mon portfolio, bonne visite !"
+  />
+  <meta
+    name="keywords"
+    content="pierre, prézelin, prezelin, portfolio, etudiant, angouleme, france, français, services, reseaux, communication, web, design, web design, infographie, image, graphisme, audiovisuel, développement, multimedia, son, html, css, javascript, js, php, src"
+  />
+  <link rel="stylesheet" type="text/css" href="/styles/style.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+</head>
